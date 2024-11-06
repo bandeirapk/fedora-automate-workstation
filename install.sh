@@ -1,5 +1,8 @@
 #!/bin/bash
 
+NAME=$1
+EMAIL=$2
+
 # Atualização de pacotes e upgrade do system
 sudo apt update && sudo apt upgrade -y
 
@@ -181,6 +184,10 @@ sudo dnf install code -y
 
 sudo cp ./fonts/jetbrains-font/ttf/* /usr/share/fonts/
 sudo fc-cache -f -v
+
+# Configuração Git
+git config --global user.name "${NAME}"
+git config --global user.email "${EMAIL}"
 
 # Aplicativos para instalar depois manualmente: Insync
 # O que adicionar como webapp depois: Bitwarden
