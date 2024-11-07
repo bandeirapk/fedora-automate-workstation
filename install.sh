@@ -25,7 +25,6 @@ sudo dnf install gnome-tweaks -y
 sudo dnf install dropbox -y
 
 # Instalar aplicativos em flatpak
-flatpak install flathub org.mozilla.firefox
 flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.spotify.Client
 flatpak install flathub com.obsproject.Studio
